@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box 3</title>
+    <style>
+        body{
+            height: 700px;
+            font-size: 30px;
+            font-weight: 60;     
+        }
+        li{
+            background-color: aliceblue;
+            border: 1px solid black;
+            padding:10px 5px 15px 20px;           
+        }
+        .flex-container{
+            height: 100%;
+            display: flex;
+        }
+        .one{
+            flex-grow: 1;
+            background-color: grey;
+            padding: 10px;
+        }
+        ul{
+            list-style-type: none;
+            padding-inline-start: 0%;
+        }
+        .two{
+            display: flex;
+            flex-grow: 8;
+            flex-direction: column;
+        }
+        header{
+            background-color: lightgreen;
+            flex-grow: 1;
+            padding: 10px;
+        }
+        article{
+            flex-grow: 8;
+            padding: 10px;
+        }
+        footer{
+            flex-grow: 1;
+            padding: 10px;
+            background-color: lightgreen;
+        }
+        li:focus,
+        li:hover{
+            cursor: zoom-in;
+            border-left: 18px;
+            background-color: aliceblue;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <nav class="one" >
+            <h1>Nav</h1>          
+            <ul>
+                <li><a href="#" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">About</a></li>
+                <li><a href="#" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="two">
+            <header>
+                <h1>Header</h1>
+            </header>
+            <article>
+                <h1>Article</h1>
+            </article>
+            <footer>
+                <h1>Footer</h1>
+            </footer>
+
+        </div>
+
+    </div>
+</body>
+</html>
